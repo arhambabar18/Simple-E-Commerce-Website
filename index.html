@@ -10,13 +10,13 @@
 
   <header>
     <h1>Bazaar</h1>
-    <form>
-      <input type="search" placeholder="Search products">
+    <form id="search-form">
+      <input type="search" id="search" placeholder="Search products">
       <button>Search</button>
     </form>
     <nav>
       <a href="#">Sign in</a>
-      <a href="#">Cart (0)</a>
+      <a href="#" id="cart">Cart (0)</a>
     </nav>
   </header>
 
@@ -31,28 +31,28 @@
 
   <main>
     <section class="hero">
-      <h2>Big season sale. Up to 50% off.</h2>
-      <p>Free delivery on orders over Rs. 3,000.</p>
+      <h2 id="hero-text">Big season sale. Up to 50% off.</h2>
+      <p id="greeting"></p>
     </section>
 
     <section>
       <h2>Popular products</h2>
-      <div class="grid">
-        <article><p>🎧</p><h3>Headphones</h3><span>Rs. 4,999</span><button>Add to cart</button></article>
-        <article><p>👟</p><h3>Running Shoes</h3><span>Rs. 6,200</span><button>Add to cart</button></article>
-        <article><p>🪴</p><h3>Plant Pot</h3><span>Rs. 1,150</span><button>Add to cart</button></article>
-        <article><p>⌚</p><h3>Wrist Watch</h3><span>Rs. 3,450</span><button>Add to cart</button></article>
-        <article><p>🎒</p><h3>Leather Bag</h3><span>Rs. 5,800</span><button>Add to cart</button></article>
-        <article><p>📱</p><h3>Smartphone</h3><span>Rs. 42,999</span><button>Add to cart</button></article>
-        <article><p>🕯️</p><h3>Soy Candle</h3><span>Rs. 850</span><button>Add to cart</button></article>
-        <article><p>📚</p><h3>Book Set</h3><span>Rs. 2,300</span><button>Add to cart</button></article>
-      </div>
+      <select id="category"><option>All</option></select>
+      <p id="delivery"></p>
+      <div class="grid" id="grid"></div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Bazaar. All rights reserved.</p>
+  <footer id="contact">
+    <p>Contact us: support@bazaar.com | +92 300 1234567</p>
+    <form id="newsletter">
+      <input id="email" placeholder="Your email for offers">
+      <button>Subscribe</button>
+    </form>
+    <p id="message"></p>
+    <p>© <span id="year"></span> Bazaar. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
